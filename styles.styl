@@ -1,0 +1,532 @@
+html {
+    // box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background: #eee;
+    // padding: 70px 0 150px;
+}
+
+header {
+    color: #fff;
+    background: #524763;
+    padding: 20px;
+    fixed: top left;
+    // position: fixed;
+         position: fixed;
+    top:0; left:10;
+    // width: 100%;
+    width: 98%;
+    height: 70px;
+    z-index: 999;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.6em;
+    float: left;
+}
+
+header .login-buttons-dropdown-align- {
+    float: right;
+}
+
+header .login-buttons-dropdown-align- a {
+    color: #fff;
+    text-decoration: none;
+}
+
+p {
+    color: #333;
+}
+
+.page-title {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.billboard {
+    background: #373142;
+    color: #fff;
+    font-size: 2em;
+    text-align: center;
+    padding: 60px;
+    margin-top:110px;
+}
+
+.billboard h2 {
+    margin: 0;
+}
+
+.main-layout {
+    lost-center: 90%;
+    margin-left:10%;
+    margin-right:2%;
+    margin-top: 120px;
+    above(700px);
+    // above(960px);
+}
+
+.new-recipe {
+    margin-bottom: 20px;
+}
+
+.new-recipe-container {
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.new-recipe-container .fa-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+}
+
+.new-recipe-container label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.new-recipe-container textarea,
+.new-recipe-container input {
+    width: 97%;
+}
+
+.btn,
+button {
+    display: inline-block;
+    cursor: pointer;
+    background: #524763;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    border: solid 3px #524763;
+    border-radius: 2px;
+    font-weight: 800;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s ease;
+}
+
+.btn:hover,
+button:hover {
+    background: #3e334f;
+    border-color: #3e334f;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.btn.btn-primary,
+button.btn-primary {
+    background: #82d8d8;
+    border-color: #82d8d8;
+    color: #373142;
+}
+
+.btn.btn-primary:hover,
+button.btn-primary:hover {
+    background: #5ab0b0;
+    border-color: #5ab0b0;
+}
+
+.btn.btn-deny,
+button.btn-deny {
+    background: #e54b4b;
+    border: solid 3px #e54b4b;
+}
+
+.btn.btn-deny:hover,
+button.btn-deny:hover {
+    background: #d13737;
+    border-color: #d13737;
+}
+
+.btn.btn-text,
+button.btn-text {
+    color: #524763;
+    background: transparent;
+    border: solid 2px #524763;
+    box-shadow: none;
+}
+
+.btn.btn-text:hover,
+button.btn-text:hover {
+    background: #82d8d8;
+    border-color: #82d8d8;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.btn.btn-text-dark,
+button.btn-text-dark {
+    color: #fff;
+    background: transparent;
+    border: solid 2px #fff;
+    box-shadow: none;
+}
+
+.btn.btn-text-dark:hover,
+button.btn-text-dark:hover {
+    background: #fff;
+    color: #373142;
+    border-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.btn.btn-confirmation,
+button.btn-confirmation {
+    color: #222;
+    background: #cbe56c;
+    border: solid 2px #cbe56c;
+}
+
+.btn.btn-confirmation:hover,
+button.btn-confirmation:hover {
+    background: #b7d158;
+    border-color: #373142;
+}
+
+.btn.btn-cancel,
+button.btn-cancel {
+    color: #fff;
+    background: transparent;
+    border: solid 2px #fff;
+    opacity: 0.4;
+    box-shadow: inset -2px 7px 9px -7px rgba(0,0,0,0.7);
+}
+
+.btn.btn-cancel:hover,
+button.btn-cancel:hover {
+    background: #e54b4b;
+    color: #fff;
+    opacity: 1;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-color: #e54b4b;
+}
+
+input,
+select,
+textarea {
+    color: #524763;
+    background: #fff;
+    border: solid 2px #eee;
+    border-radius: 2px;
+    font-weight: 800;
+    width: 100%;
+    padding: 6px 10px;
+    margin-bottom: 10px;
+}
+
+input.static-input,
+select.static-input,
+textarea.static-input {
+    border: none;
+    background: transparent;
+}
+
+.list-group {
+    list-style: none;
+    padding: 0;
+}
+
+.panel-body .form-group {
+    lost-column: 1/2;
+}
+
+.autoform-remove-item.btn {
+    background: #eee;
+    box-shadow: none;
+    border: none;
+    border-radius: 50%;
+    font-size: 1em;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    display: block;
+    padding: 0;
+}
+
+.autoform-add-item.btn {
+    width: 96.5%;
+    border-radius: 1;
+    border: none;
+    box-shadow: none;
+    background: #eee;
+}
+
+.autoform-remove-item-wrap {
+    vertical-align: middle;
+}
+
+.side-nav {
+    // height: 100%; /* 100% Full-height */
+    // width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    // background-color: #111; /* Black*/
+    // overflow-x: hidden;  Disable horizontal scroll 
+    padding-top: 115px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    fixed: bottom left;
+    height: 100%;
+    width: 9%;
+    overflow-x:hidden;
+    background: #373142;
+    color: #fff;
+    z-index: 7;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    above(700px)
+    above(960px);
+}
+
+.side-nav ul {
+    margin: 0;
+    padding: 0;
+     display: block;
+    transition: 0.3s
+    justify-content: space-between;
+    list-style: none;
+}
+
+.side-nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 20px;
+    display: block;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.side-nav a:hover,
+.side-nav a.active {
+    background: #524763;
+}
+
+.side-nav i {
+    display: block;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.recipe,
+.menu-item,
+.shopping-list {
+    background: #fff;
+    padding: 0 20px 20px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s ease;
+}
+
+.recipe .btn-deny,
+.menu-item .btn-deny,
+.shopping-list .btn-deny {
+    display: block;
+}
+
+.recipe.in-menu,
+.menu-item.in-menu,
+.shopping-list.in-menu {
+    background: #82d8d8;
+    color: #fff;
+}
+
+.recipe.in-menu h3,
+.menu-item.in-menu h3,
+.shopping-list.in-menu h3 {
+    border-bottom: rgba(255,255,255,0.6) solid 3px;
+}
+
+// .recipe.in-menu .btn-primary,
+// .menu-item.in-menu .btn-primary,
+// .shopping-list.in-menu .btn-primary {
+//     display: none;
+// }
+
+.recipe.in-menu .btn-primary ,.recipe.in-menu .btn-deny, 
+.menu-item.in-menu .btn-primary ,.recipe.in-menu .btn-deny,
+.shopping-list.in-menu .btn-primary,.recipe.in-menu .btn-deny{
+    display: block;
+}
+
+.recipe h3,
+.menu-item h3,
+.shopping-list h3 {
+    font-size: 3em;
+    opacity: 0.3;
+    border-bottom: rgba(0,0,0,0.3) solid 3px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.recipe button,
+.menu-item button,
+.shopping-list button {
+    margin-top: 20px;
+}
+
+.recipe .fa-trash,.recipe .fa-pencil,
+.menu-item .fa-trash,.menu-item .fa-pencil,
+.shopping-list .fa-trash,.shopping-list .fa-pencil {
+    opacity: 0.3;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.6em;
+    display: block;
+    padding: 20px;
+    color: #222;
+    transition: all 0.3s ease;
+}
+
+.recipe .fa-pencil:hover,
+.menu-item .fa-pencil:hover,
+.shopping-list .fa-pencil:hover {
+    color: #008080;
+    opacity: 0.8;
+}
+
+.recipe .fa-pencil {
+        right :40px;
+}
+
+.recipe .fa-trash:hover,
+.menu-item .fa-trash:hover,
+.shopping-list .fa-trash:hover {
+    color: #e54b4b;
+    opacity: 0.6;
+}
+
+.recipe .ingredient,
+.menu-item .ingredient,
+.shopping-list .ingredient {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+.recipe:hover,
+.menu-item:hover,
+.shopping-list:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.shopping-list {
+    padding: 50px 5%;
+    list-style: none;
+}
+
+.shopping-list li {
+    font-size: 2em;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+}
+
+.shopping-list li + li {
+    border-top: none;
+}
+
+.login-buttons-dropdown-align- #login-dropdown-list {
+    right: 0;
+    left: auto;
+}
+
+.login-buttons-dropdown-align- #login-dropdown-list a {
+    color: #373142;
+}
+
+@-moz-keyframes card {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    50% {
+        transform: translate3d(0, -135px, 0);
+    }
+
+    51% {
+        z-index: 10;
+        transform: translate3d(0, -135px, 0);
+    }
+
+    100% {
+        z-index: 10;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@-webkit-keyframes card {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    50% {
+        transform: translate3d(0, -135px, 0);
+    }
+
+    51% {
+        z-index: 10;
+        transform: translate3d(0, -135px, 0);
+    }
+
+    100% {
+        z-index: 10;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@-o-keyframes card {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    50% {
+        transform: translate3d(0, -135px, 0);
+    }
+
+    51% {
+        z-index: 10;
+        transform: translate3d(0, -135px, 0);
+    }
+
+    100% {
+        z-index: 10;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes card {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    50% {
+        transform: translate3d(0, -135px, 0);
+    }
+
+    51% {
+        z-index: 10;
+        transform: translate3d(0, -135px, 0);
+    }
+
+    100% {
+        z-index: 10;
+        transform: translate3d(0, 0, 0);
+    }
+}
